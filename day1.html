@@ -1,0 +1,141 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Operators</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	var num1=10;
+	var num2=20;
+
+	//Arithmetic operators
+	document.write('<h2>Assignment operator</h2>'+ "<br>");
+  
+  var res1=num1+num2;
+  document.write('Addition is:',res1 + "<br>");
+
+  var res2=num2-num1;
+  document.write('Subtraction is:',res2 + "<br>");
+
+  var res3=num1*num2;
+  document.write('Multiplication is:',res3 + "<br>");
+
+  var res4=num2/num1;
+  document.write('Division is:',res4 + "<br>");
+
+
+ var res5=num1%num2;
+ document.write('Modulus is:',res5 + "<br>");
+
+ var res6=num1++;
+ document.write('increment is:', res6+"<br>");
+
+ var res7=num2--;
+ document.write('decrement  is:',res7+"<br>");
+
+//Assignment operator
+
+document.write('<h2>Assignment operator</h2>');
+
+ var num3=12;
+ var num4=20;
+
+ var result= num3;
+ document.write('Equal:',result + "<br>");
+
+ var x=10;
+ x +=5;
+ document.write('plus equal:',x + "<br>"); 
+
+ var y=20;
+ y-= 7;
+ document.write('minus equal:',y + "<br>");
+
+ var z=50;
+ z/=5;
+ document.write('divide equal:',z + "<br>");
+
+var z=100;
+z %=5;
+document.write('modulo equal:',z);
+
+//Comparison operator
+document.write('<h2>Comparison operator</h2>');
+
+var result1= num1==num2;
+document.write('equal to:',result1 + "<br>");
+
+var result2= num1!= num2;
+document.write('not equal to:',result2 + "<br>");
+
+var result3=num1<num2;
+document.write('less than:',result3 + "<br>");
+
+var result4=num1>num2;
+document.write('greater than:',result4 + "<br>");
+
+var result5=num1<=num2;
+document.write('less than or equal to:',result5 + "<br>");
+
+var result6=num1>=num2;
+document.write('greater than or equal to:',result6 + "<br>");
+
+
+var age=16;
+var voteable = (age < 18) ? "Too young":"Old enough";
+
+document.write('ternary:',voteable + "<br>");
+
+
+//Logical operator
+document.write('<h2>Logical operator</h2>');
+
+var ans1= num1>num2 && num2<num1;
+document.write('logical and:',ans1 + "<br>");
+
+var ans2=num1>num2 || num2<num1;
+document.write('logical or:',ans2 + "<br>");
+
+var ans3= !num1>num2;
+document.write('logical not:',ans3 + "<br>");
+
+//Unary operators
+
+document.write('<h2>Unary operators</h2>');
+
+var no1=10;
+var no2=++no1;
+document.write( no2, no1 + "<br>");
+
+var no2=--no1;
+document.write(no2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
