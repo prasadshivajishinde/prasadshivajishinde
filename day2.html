@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Day2 Assignment</title>
+</head>
+<body>
+<script type="text/javascript">
+// Program to print multiplication table of 5
+
+const number = parseInt(prompt("Enter a number : "));
+
+for (let i = 1; i <= 10; i++) {
+  console.log(number + "*" + i + "=" + number * i);
+}
+
+document.write("<br>");
+
+
+
+
+//Q2
+
+// Store marks of all the subjects in an array
+let marks=[25, 65, 46, 98, 78, 65];
+
+// Max marks will be 100 * number of subjects
+let max_marks = marks.length * 100;
+
+// Initialize student's total marks to 0
+let total = 0;
+
+// Initialize student's grade marks to F
+		let grade = 'F';
+
+		// Traverse though the marks array to find the sum.
+		for (let i = 0; i < marks.length; i++) {
+			total += marks[i];
+		}
+
+		// Calculate the percentage.
+		let percentage
+			= ((total) / max_marks) * 100;
+
+		// Nested if else
+		if (percentage >= 90) {
+			grade = 'A';
+		}
+		else {
+			if (percentage >= 80 && percentage <= 89) {
+				grade = 'B';
+			}
+			else {
+				if (percentage >= 60 && percentage <= 79) {
+					grade = 'C';
+				}
+				else {
+					if (percentage >= 33 && percentage <= 59) {
+						grade = 'D';
+					}
+					else {
+						grade = 'F';
+					}
+				}
+			}
+		}
+
+		console.log('grade:',grade);
+  
+   console.log('percentage:',percentage);
+ </script>
+</body>
+</html>
